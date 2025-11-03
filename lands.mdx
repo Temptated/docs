@@ -1,0 +1,184 @@
+---
+tags: "lands,claiming,nations,protection,gameplay"
+author: "Server Admin"
+lastUpdated: "2025-11-02"
+description: "Claim land to protect your base."
+title: "🗺️ » Land Claiming Guide"
+---
+
+import { Callout } from '@/components/ui/callout'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+
+Welcome to our comprehensive guide for the **Lands Claiming Feature**! This system allows you to protect your builds, create nations, and engage in territorial gameplay.
+
+## Quick Start Commands
+
+<Check>
+  All of the items below should be functional. **Please report any bugs you notice if you notice any!**
+</Check>
+
+<info>
+  **Essential Commands:**
+
+  * `/l` or `/land` or `/lands` - View your lands and nations
+  * `/claim` - Claim the chunk you're standing in
+  * `/nation` - Manage your nation settings
+</info>
+
+## Getting Started with Land Claims
+
+### Your First Claim
+
+When you're ready to protect an area:
+
+1. **Stand in the chunk** you want to claim
+2. **`Run /claim`** to claim that chunk
+3. **Look for the bell** that appears - this marks the start of your claimed territory
+4. \*\*Open your barrel \*\*to use your storage
+
+```bash
+/claim
+# Claims the current chunk you're standing in
+```
+
+### Managing Your Claims
+
+Use these commands to view and manage your claimed land:
+
+<Tabs>
+  <Tab title="Tab">
+    **View Your Territory:**
+
+    - `/land` - See all your lands and nations
+    - `/l` - Quick shorthand for `/land`
+    - `/lands` - Alternative command for viewing territories
+
+    <img
+      src="/images/image.png"
+      alt="image.png"
+      title="image.png"
+      style={{ width:"74%" }}
+    />
+
+    A GUI like this should pop up once you do /l or /lands
+  </Tab>
+  <Tab title="Tab">
+    **Claim Management:**
+
+    - `/claim` - Claim current chunk
+    - `/unclaim` - Remove claim from current chunk
+    - `/trust [player]` - Allow a player to build in your claims
+    - `/untrust [player]` - Remove building permissions
+  </Tab>
+</Tabs>
+
+## Understanding Claims
+
+### Claim Storage System
+
+Every player has a **claim storage** limit that determines how many chunks they can claim. You can check your current usage and limits through the `/land` interface.
+
+### The Claim Bell
+
+When you successfully claim a chunk, a **bell** appears to mark the beginning of your territory. This visual indicator helps you and other players understand where your claimed land begins and ends.
+
+<warning>
+  **Important:** Claims are chunk-based, meaning you claim entire 16x16 block sections at once.
+</warning>
+
+## Creating and Managing Nations
+
+### Founding Your Nation
+
+Ready to expand beyond individual claims? Create a nation to unite multiple players and territories:
+
+```bash
+/nations create <name>
+# Example: /nations create "Northern Kingdom"
+```
+
+### Nation Management
+
+Once your nation exists, use these commands to develop it:
+
+<Tabs>
+  <Tab title="Tab">
+    **Essential Nation Commands:**
+
+    - `/nation` - Access nation management menu
+    - `/nation setcapital` - Set your nation's capital city
+    - `/nation delete`- Remove nations
+
+    ### Claim/Nation Map
+
+    Before creating your nation, it is \*\*highly recommended \*\*that you check the nation map to ensure you know your surroundings. Do to this, simply type `/map`
+  </Tab>
+  <Tab title="Tab">
+    **Advanced Features:**
+
+    - `/nation ally [nation]` - Form alliances with other nations
+    - `/nation enemy [nation]` - Declare rivalries
+    - `/nation tax [amount]` - Set taxes for nation members
+    - `/nation rank [player] [rank]` - Assign ranks to members
+  </Tab>
+</Tabs>
+
+### Setting Your Capital
+
+Your nation's capital is its heart. Choose your chunk wisely, make sure it's in a good, far away location.
+
+```bash
+/nation setcapital
+# Sets the current location as your nation's capital
+```
+
+## Warfare and Conflict
+
+Nations can engage in organized warfare using the war system:
+
+### War Commands
+
+```bash
+/war declare [nation]    # Declare war on another nation
+/war spawn               # Teleport to the enemy during a war
+```
+
+<danger>
+  **War Consequences:** During wartime, enemy nations may be able to siege your territory or gain special advantages. Plan your defenses accordingly!
+</danger>
+
+## 
+
+## Troubleshooting
+
+### Common Issues
+
+**"I can't claim this chunk"**
+
+- Check if you have enough maximum claims left
+- Verify the chunk isn't already claimed by another player
+- Ensure you're not too close to spawn or other protected areas
+
+**"My nation commands aren't working"**
+
+- Make sure you have the correct permissions in your nation
+- Verify you're using the exact command syntax
+- Check if your nation exists and you're a member
+
+**"I lost my claims"**
+
+- Claims may expire after extended inactivity if you don't pay your ukpeep
+- Contact an administrator if you believe there's been an error
+- Regular play helps maintain your claims
+
+## Getting Help
+
+- **In-game:** Ask in chat or contact an online moderator
+- **Discord:** Join our community Discord for detailed help
+- **Wiki:** Check other wiki pages for advanced topics
+
+<success>
+  **Pro Tip:** Start with a small, well-defended territory and gradually expand as you gain more claim storage and allies!
+</success>
+
+---
